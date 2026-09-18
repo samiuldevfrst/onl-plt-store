@@ -1,0 +1,352 @@
+/* General */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5faf5;
+    color: #333;
+}
+
+
+/* Navigation */
+
+.navbar {
+    padding: 15px;
+}
+
+
+/* Mouse Hover Effect */
+
+.navbar .nav-link {
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: white;
+    color: green !important;
+    border-radius: 8px;
+}
+
+
+/* Hero */
+
+.hero-section {
+    background-image:
+    linear-gradient(rgba(0, 70, 0, 0.6),
+                    rgba(0, 70, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 120px 20px;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 20px;
+}
+
+
+/* Section Title */
+
+.section-title {
+    text-align: center;
+    color: #198754;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+/* Quiz */
+
+.quiz-box {
+    max-width: 700px;
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+/* Photo Collage */
+
+.plant-collage {
+    display: grid;
+
+    grid-template-columns:
+    repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.plant-collage img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.plant-collage img:hover {
+    transform: scale(1.04);
+}
+
+
+/* Plant Cards */
+
+.plant-card {
+    background-color: white;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+    0 4px 15px rgba(0,0,0,0.1);
+}
+
+.plant-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.plant-card h3 {
+    margin-top: 15px;
+}
+
+
+/* Collection */
+
+.collection-section {
+    background-color: #e8f5e9;
+
+    padding: 60px 20px;
+}
+
+.collection-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+.collection-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* Care Card */
+
+.care-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+/* About Preview */
+
+.about-preview {
+    background-color: #dcedc8;
+
+    padding: 60px 20px;
+}
+
+
+/* Product */
+
+.product-image {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+
+/* Add-ons */
+
+.addon-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+    0 3px 12px rgba(0,0,0,0.1);
+}
+
+
+/* Tips */
+
+.tip-card {
+    background-color: #ffffff;
+
+    border-left: 5px solid #198754;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+}
+
+
+/* Founder */
+
+.founder-card {
+    background-color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+.founder-card img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* Contact */
+
+.contact-box,
+.chat-box,
+.contact-info {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+    0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+/* Unordered List */
+
+.member-list {
+    list-style-type: none;
+
+    padding: 0;
+
+    max-width: 500px;
+
+    margin: auto;
+}
+
+.member-list li {
+    background-color: #198754;
+
+    color: white;
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    border-radius: 12px;
+
+    border: 2px solid #146c43;
+
+    transition: 0.3s;
+}
+
+.member-list li:hover {
+    background-color: #0f5132;
+
+    transform: translateX(10px);
+
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #14532d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .hero-section h1 {
+        font-size: 35px;
+    }
+
+    .plant-collage {
+        grid-template-columns:
+        repeat(2, 1fr);
+    }
+
+    .product-image {
+        height: 350px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .plant-collage {
+        grid-template-columns: 1fr;
+    }
+
+}

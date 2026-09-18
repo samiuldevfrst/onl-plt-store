@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blooming Oasis - Home</title>
+
+    <!-- Bootstrap CSS Framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation Menu -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+             Blooming Oasis
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+
+            <span class="text-white" id="dateTime"></span>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero-section text-center">
+    <div class="container">
+
+        <h1>Bring Nature Into Your Home </h1>
+
+        <p>
+            Discover beautiful indoor plants and create your own
+            peaceful green oasis.
+        </p>
+
+        <a href="#quiz" class="btn btn-light btn-lg">
+            Find Your Perfect Plant
+        </a>
+
+    </div>
+</section>
+
+
+<!-- Plant Matchmaker -->
+<section id="quiz" class="container my-5">
+
+    <h2 class="section-title">
+         Plant Matchmaker
+    </h2>
+
+    <p class="text-center">
+        Answer a few questions and discover a suitable plant.
+    </p>
+
+    <div class="quiz-box">
+
+        <label>1. How much sunlight does your room get?</label>
+
+        <select id="sunlight" class="form-select mb-3">
+            <option value="">Select</option>
+            <option value="bright">Bright</option>
+            <option value="low">Low</option>
+        </select>
+
+
+        <label>2. What care level do you prefer?</label>
+
+        <select id="care" class="form-select mb-3">
+            <option value="">Select</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+        </select>
+
+
+        <label>3. Do you have pets?</label>
+
+        <select id="pets" class="form-select mb-3">
+            <option value="">Select</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+
+        <button class="btn btn-success" onclick="matchPlant()">
+            Find My Plant
+        </button>
+
+        <div id="quizResult" class="mt-4"></div>
+
+    </div>
+
+</section>
+
+
+<!-- Plant Photo Collage -->
+<section class="container my-5">
+
+    <h2 class="section-title">
+         Our Green Collection
+    </h2>
+
+    <div class="plant-collage">
+
+        <img src="https://images.unsplash.com/photo-1525490829609-d166ddb58678"
+             alt="Indoor Plant">
+
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+             alt="Green Plant">
+
+        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
+             alt="Beautiful Plant">
+
+        <img src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85"
+             alt="Houseplant">
+
+    </div>
+
+</section>
+
+
+<!-- Popular Houseplants -->
+<section class="container my-5">
+
+    <h2 class="section-title">
+         Popular Houseplants
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="plant-card">
+                <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b"
+                     alt="Monstera">
+                <h3>Monstera</h3>
+                <p>Beautiful tropical plant for bright indoor spaces.</p>
+                <a href="product.html" class="btn btn-success">
+                    View Product
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="plant-card">
+                <img src="https://images.unsplash.com/photo-1593482892290-f54927ae1bb7"
+                     alt="Snake Plant">
+                <h3>Snake Plant</h3>
+                <p>Low-maintenance plant perfect for beginners.</p>
+                <a href="product.html" class="btn btn-success">
+                    View Product
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="plant-card">
+                <img src="https://images.unsplash.com/photo-1593691509543-c55fb32e5cee"
+                     alt="Peace Lily">
+                <h3>Peace Lily</h3>
+                <p>A beautiful indoor plant with elegant flowers.</p>
+                <a href="product.html" class="btn btn-success">
+                    View Product
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Curated Collections -->
+<section class="collection-section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+             Curated Collections
+        </h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <div class="collection-card">
+                    <h3>Beginner's Garden</h3>
+                    <p>Easy-care plants for new plant parents.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="collection-card">
+                    <h3>Pet Friendly</h3>
+                    <p>Plants selected with pet owners in mind.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="collection-card">
+                    <h3>Tropical Paradise</h3>
+                    <p>Create a tropical atmosphere at home.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Plant Care Guides -->
+<section class="container my-5">
+
+    <h2 class="section-title">
+         Plant Care Guides
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="care-card">
+                <h3> Watering</h3>
+                <p>
+                    Learn how often different plants need water.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="care-card">
+                <h3> Lighting</h3>
+                <p>
+                    Understand bright, indirect and low-light conditions.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="care-card">
+                <h3> Repotting</h3>
+                <p>
+                    Learn when and how to repot your indoor plants.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- About Blooming Oasis -->
+<section class="about-preview">
+
+    <div class="container text-center">
+
+        <h2>About Blooming Oasis</h2>
+
+        <p>
+            Blooming Oasis is a plant-loving community dedicated to
+            helping people bring the beauty of nature into their homes.
+            We provide beautiful plants, helpful care information and
+            curated collections for every type of plant parent.
+        </p>
+
+        <a href="about.html" class="btn btn-success">
+            Learn More
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p> 2026 Blooming Oasis | All Rights Reserved</p>
+
+    <p>
+        Visit our
+        <a href="https://www.instagram.com/"
+           target="_blank">
+            Instagram
+        </a>
+    </p>
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

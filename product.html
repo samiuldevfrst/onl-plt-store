@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blooming Oasis - Monstera</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+             Blooming Oasis
+        </a>
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="product.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+
+            <span class="text-white" id="dateTime"></span>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- Product -->
+
+<section class="container my-5">
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <img class="product-image"
+                 src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b"
+                 alt="Monstera Plant">
+
+        </div>
+
+
+        <div class="col-md-6">
+
+            <h1>Monstera Deliciosa</h1>
+
+            <h3 class="text-success">৳ 1,200</h3>
+
+            <p>
+                The Monstera is a beautiful tropical houseplant known
+                for its large split leaves.
+            </p>
+
+            <hr>
+
+            <h4>Plant Size</h4>
+
+            <select class="form-select mb-3">
+
+                <option>Small - 20cm</option>
+                <option>Medium - 40cm</option>
+                <option>Large - 60cm</option>
+
+            </select>
+
+
+            <h4> Light Requirement</h4>
+
+            <p>
+                Bright indirect sunlight is recommended.
+            </p>
+
+
+            <h4> Watering</h4>
+
+            <p>
+                Water when the top layer of soil becomes dry.
+            </p>
+
+
+            <h4> Toxicity</h4>
+
+            <p>
+                Monstera can be harmful if eaten by pets.
+                Keep it away from cats and dogs.
+            </p>
+
+
+            <h4> Repotting</h4>
+
+            <p>
+                Repot approximately every 1–2 years when the plant
+                becomes root-bound.
+            </p>
+
+
+            <button class="btn btn-success btn-lg"
+                    onclick="addToCart()">
+
+                 Add to Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Add-ons -->
+
+<section class="container my-5">
+
+    <h2 class="section-title">
+         Add-ons
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="addon-card">
+
+                <h4>Plant Pot</h4>
+
+                <p>Beautiful ceramic pot</p>
+
+                <label>
+                    <input type="checkbox" id="pot">
+                    Add Pot (+৳300)
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-6">
+
+            <div class="addon-card">
+
+                <h4>Plant Stand</h4>
+
+                <p>Modern wooden plant stand</p>
+
+                <label>
+                    <input type="checkbox" id="stand">
+                    Add Stand (+৳500)
+                </label>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Growth Video -->
+
+<section class="container my-5">
+
+    <h2 class="section-title">
+         Monstera Growth & Care
+    </h2>
+
+    <video class="w-100" controls>
+
+        <source src="images/plant-care.mp4"
+                type="video/mp4">
+
+        Your browser does not support video.
+
+    </video>
+
+</section>
+
+
+<!-- Plant Parent Tips -->
+
+<section class="container my-5">
+
+    <h2 class="section-title">
+         Plant Parent Tips
+    </h2>
+
+    <div class="tip-card">
+
+        <h4>Sarah</h4>
+
+        <p>
+            "My Monstera is growing really well near an east-facing
+            window. I water it once a week."
+        </p>
+
+    </div>
+
+
+    <div class="tip-card">
+
+        <h4>Alex</h4>
+
+        <p>
+            "Using a moss pole helped my Monstera grow upright."
+        </p>
+
+    </div>
+
+
+    <h4 class="mt-4">
+        Share Your Experience
+    </h4>
+
+    <textarea class="form-control"
+              placeholder="Write your plant care experience...">
+    </textarea>
+
+    <button class="btn btn-success mt-3">
+        Share Tip
+    </button>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 Blooming Oasis</p>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
